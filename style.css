@@ -4,7 +4,7 @@
  }
 
  body {
-     font-family: 'Poppins', sans-serif;
+     font-family: "Poppins", sans-serif;
  }
 
  /* header background section */
@@ -12,7 +12,6 @@
      width: 1200px;
      margin: auto;
  }
-
 
  section.banner {
      background: #2d25a0;
@@ -30,7 +29,6 @@
      margin-top: 65px;
      font-size: 64px;
      line-height: 87px;
-
  }
 
  .left-side a {
@@ -87,22 +85,14 @@
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      margin-left: 90px;
-
  }
 
  .cards {
      width: 330px;
      height: 474px;
-     top: 747px;
-     left: 540px;
-     ] overflow: hidden;
+     overflow: hidden;
      border: 8px solid #fff;
      box-shadow: 10px 10px 40px rgb(114, 112, 112);
-
- }
-
- .title {
-     margin-right: 100px;
  }
 
  .image img {
@@ -110,7 +100,6 @@
  }
 
  /* highlights section */
-
 
  .flexible-container {
      display: flex;
@@ -129,7 +118,6 @@
      margin-bottom: 30px;
  }
 
-
  .half-width img {
      width: 100%;
  }
@@ -147,7 +135,6 @@
      display: flex;
      flex-direction: column;
      margin-bottom: 40px;
-
  }
 
  /* submit section */
@@ -175,7 +162,6 @@
 
  /* search section */
  .search-container {
-
      justify-content: center;
      background-color: rgb(218, 218, 162);
  }
@@ -234,24 +220,32 @@
 
  /* mobile screen */
 
- @media only screen and (max-width:688px) {
-
+ @media screen and (max-width: 688px) {
      .container {
-
          width: 100%;
      }
 
      .banner {
-
          width: 50%;
      }
 
      .section-contant {
-         grid-template-rows: repeat(2, 1fr);
+         display: block;
+         width: 100%;
      }
 
-     section.banner {
-         width: 100%;
+     .left-side h1 {
+         font-size: 30px;
+     }
+
+     .right-side img {
+         width: 240px;
+         margin-top: 20px;
+         margin-right: 100px;
+     }
+
+     .left-side {
+         margin: 0;
      }
 
      .container,
@@ -259,11 +253,10 @@
      .footer-container,
      .half-width {
          grid-template-columns: repeat(1, 1fr);
+         margin-right: 0;
      }
 
      .cards {
          flex-direction: column;
      }
-
-
  }
