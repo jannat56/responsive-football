@@ -91,13 +91,18 @@
  }
 
  .cards {
-
      width: 330px;
      height: 474px;
-     overflow: hidden;
+     top: 747px;
+     left: 540px;
+     ] overflow: hidden;
      border: 8px solid #fff;
      box-shadow: 10px 10px 40px rgb(114, 112, 112);
 
+ }
+
+ .title {
+     margin-right: 100px;
  }
 
  .image img {
@@ -243,6 +248,10 @@
 
      .section-contant {
          grid-template-rows: repeat(2, 1fr);
+     }
+
+     section.banner {
+         width: 100%;
      }
 
      .container,
