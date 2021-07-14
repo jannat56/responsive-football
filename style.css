@@ -30,6 +30,7 @@ section.banner {
     margin-top: 65px;
     font-size: 64px;
     line-height: 87px;
+
 }
 
 .left-side a {
@@ -42,6 +43,12 @@ section.banner {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
+}
+
+.left-side a:hover {
+    color: aqua;
+    width: 200px;
+    transition: 5s ease;
 }
 
 .left-side a i {
@@ -72,7 +79,7 @@ section.banner a {
 /* players Section style */
 .players {
     text-align: center;
-    margin: 5px 5px;
+    margin: 10px 10px;
     padding: 15px;
 }
 
@@ -87,8 +94,9 @@ section.banner a {
 
     width: 330px;
     height: 474px;
-    margin: 10px 10px;
-    padding: 10px 10px;
+    /* margin: 10px 10px; */
+
+    /* padding: 10px 10px; */
     overflow: hidden;
     border: 8px solid #fff;
     box-shadow: 10px 10px 40px rgb(114, 112, 112);
@@ -220,37 +228,19 @@ button {
 
 /* mobile screen */
 
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:330px) {
     .container {
         width: 100%;
     }
 
     .container,
     .search-form,
-    .footer-container,
-    .section-contant {
+    .footer-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
     .cards {
         flex-direction: column;
-    }
-
-
-}
-
-/* tablet device */
-
-@media only screen and (min-width: 688px) and (max-width:992px) {
-    .container {
-        width: 100%;
-    }
-
-    .container,
-    .cards .search-form,
-    .footer-container,
-    .section-contant {
-        grid-template-columns: repeat(2, 1fr);
     }
 
 
